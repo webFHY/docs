@@ -1,0 +1,5 @@
+//vue是否开启调试模式
+
+Vue.config.debug = false;
+Vue.config.devtools = false;
+Vue.config.productionTip = false;
