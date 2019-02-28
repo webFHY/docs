@@ -1,0 +1,17 @@
+git init   初始化
+
+ssh-keygen -t rsa -C "2361846314@qq.com"  连接github
+
+github 加权限
+
+ssh -T git@github.com  检查权限
+
+git clone git@github.com:webFHY/blog.git  克隆到本地
+
+git status  查看状态
+
+git add .  加入暂存区
+
+git commit 提交代码
+
+git push  推送到远程仓库（github）
