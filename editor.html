@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link data-name="vs/editor/editor.main" rel="stylesheet" href="./vs/assets/editor.main.css">
+    <script src="./vs/assets/loader.js"></script>
+    <script src="./vs/assets/editor.main.nls.js"></script>
+    <script src="./vs/assets/editor.main.js"></script>
+</head>
+
+<body>
+    <div class="container" style="width: 1000px;height: 500px;"></div>
+    <script>
+        const config = {};
+
+        const editor = monaco.editor.create(document.querySelector(".container"), {
+            value: config.code || '',
+            readOnly: config.readOnly,
+            language: "html",
+            // language,
+            automaticLayout: true,
+            theme: config.theme || 'vs-dark',
+            minimap: {
+                enabled: false,
+            },
+        });
+    </script>
+</body>
+
+</html>
